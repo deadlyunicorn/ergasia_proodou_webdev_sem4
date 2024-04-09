@@ -1,0 +1,49 @@
+
+  main .description{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    align-items: center;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  
+  main .moreInfo {
+    display: flex;
+  }
+  
+  .announcements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+  }
+  
+  .announcements h2 {
+    width: fit-content;
+    font-size: 48px;
+    font-weight: 600;
+  }
+  
+  .announcements ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  
+  .contactInfo address {
+    text-align: center;
+    position: sticky;
+    top: 16vh;
+  }
+  
+  .contactInfo h3 {
+    margin: 0;
+  }
+  
+  .contactInfo address p {
+    font-size: 16px;
+  }

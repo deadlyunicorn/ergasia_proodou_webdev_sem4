@@ -1,0 +1,126 @@
+body {
+  padding-inline: 15vw;
+  padding-block: 5.7vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vh;
+  margin: 0;
+  color: #5f6c7b;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #094067;
+  font-weight: inherit;
+}
+
+nav {
+  padding-block: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  letter-spacing: 1.44px; /* 4% of 36px*/
+  font-size: 36px;
+}
+
+.bigTitleHeadline {
+  font-size: 96px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 16px; /* 16% of 96px */
+}
+
+nav a:hover {
+  cursor: pointer;
+}
+
+nav a::after {
+  content: "";
+  background-color: #094067;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  border-radius: 16px;
+}
+
+nav a:hover::after {
+  width: 100%;
+  animation: linkUnderline 0.4s linear;
+}
+
+@keyframes linkUnderline {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+nav h3 {
+  position: relative;
+}
+
+main {
+  column-gap: 64px;
+  padding-block: 32px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .bigTitleHeadline {
+    font-size: 72px;
+  }
+  .announcements h2 {
+    font-size: 36px;
+  }
+  body {
+    font-size: 16px;
+  }
+  nav {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .contactInfo address p {
+    font-size: 12px;
+  }
+  .bigTitleHeadline {
+    font-size: 64px;
+  }
+  .announcements h2 {
+    font-size: 24px;
+  }
+  body {
+    font-size: 12px;
+  }
+  nav {
+    font-size: 16px;
+  }
+}
+
+footer{
+  font-size: 11px;
+}
+special{
+  display: block;
+  font-size: 6px;
+}
